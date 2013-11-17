@@ -12,7 +12,8 @@ table.ui.basic.table
       td.name Freddy
       td.message Ya, I'm looking into it right now.
       td.time Sat Jul 23 02:16:57 2005
-#chatbox.ui.input.icon
-  form#chatform(method="POST", action="/message")
-    input(type="text", placeholder="Write your message", name="message")
-    i.inverted.chat.icon.teal
+
+form#chatform(method="POST", action="/message")
+  #chatbox.ui.input.icon
+      input(type="text", placeholder="Write your message", name="message")
+      i.inverted.chat.icon.teal

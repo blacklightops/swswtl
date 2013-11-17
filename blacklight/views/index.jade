@@ -4,8 +4,9 @@ html(lang="en")
     include res/head
     include res/styles
   body
-    .ui.fixed.transparent.inverted.main.menu
-      .title.item= app_name
+    .ui.fixed.transparent.main.menu.borderless
+      .title.item.vertically.fitted
+        img(src="/image/logo.png")
       .item.align.right
         i.icon.list#menu-button
     .ui.right.sidebar
