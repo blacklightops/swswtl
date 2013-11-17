@@ -1,0 +1,18 @@
+table.ui.basic.table
+  tbody
+    tr
+      td.name Johnny
+      td.message Hey, is the website down right now?
+      td.time Sat Jul 23 02:16:57 2005
+    tr
+      td.name Sally
+      td.message Look at the status <-- not good.
+      td.time Sat Jul 23 02:16:57 2005
+    tr
+      td.name Freddy
+      td.message Ya, I'm looking into it right now.
+      td.time Sat Jul 23 02:16:57 2005
+#chatbox.ui.input.icon
+  form#chatform(method="POST", action="/message")
+    input(type="text", placeholder="Write your message", name="message")
+    i.inverted.chat.icon.teal

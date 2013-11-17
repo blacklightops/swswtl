@@ -1,0 +1,43 @@
+{
+  "name": "BlackLightOps",
+  "description": "Black light ops.",
+  "version": "0.1.1",
+  "author": {
+    "name": "Kyle Cunningham",
+    "email": "kyle@codeincarnate.com"
+  },
+  "contributors": [
+    {
+      "name": "Kyle Cunningham",
+      "email": "kyle@codeincarnate.com"
+    }
+  ],
+  "scripts": {
+    "start": "coffee app.coffee",
+    "predeploy": "node build.js"
+  },
+  "keywords": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "express": ">=3.0.0rc3",
+    "stylus": ">=0.28.2",
+    "request": ">=2.9.203",
+    "colors": ">=0.6.0-1",
+    "coffee-script": "*",
+    "jade": "*",
+    "connect-coffee-script": "latest",
+		"bookshelf": "latest",
+    "node-xmpp": "latest"
+  },
+  "devDependencies": {
+    "smoosh": ">=0.3.2",
+    "walkdir": ">=0.0.5"
+  }
+}

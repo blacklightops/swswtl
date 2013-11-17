@@ -1,0 +1,19 @@
+!!!
+html(lang="en")
+  head
+    include res/head
+    include res/styles
+  body
+    .ui.fixed.transparent.inverted.main.menu
+      .title.item= app_name
+      .item.align.right
+        i.icon.list#menu-button
+    .ui.right.sidebar
+    #page.ui.page.stackable.grid
+      #log.eight.wide.column
+        include ui/log
+      #contextual.eight.wide.column
+        include ui/detail
+      #chat.sixteen.wide.column
+        include ui/chat
+    include res/scripts
