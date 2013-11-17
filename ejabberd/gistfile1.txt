@@ -1,0 +1,26 @@
+Configuring Ejabberd
+
+Configuring Ejabberd is a piece of cake.
+
+Goto your Ejabberd configuration folder (mine is /opt/ejabberd-2.1.4/conf) - open “ejabberd.cfg”.
+
+Find the line:
+
+{auth_method, internal}.
+
+Change to (comment out using “%%”):
+
+%%{auth_method, internal}.
+
+A few lines down, find the line:
+
+%%{auth_method, external}.
+
+Uncomment this line and the line beneath it.
+
+Modify the line beneath to read something like (or wherever you put the auth script):
+
+{extauth_program, “/opt/auth.php”}.
+
+Restart your server to apply the configuration settings (after re-uploading your settings file).
+
